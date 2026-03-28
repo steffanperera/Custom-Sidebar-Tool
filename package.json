@@ -9,9 +9,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:customSidebar.selectExplorerIcon"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
