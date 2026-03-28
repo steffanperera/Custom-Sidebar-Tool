@@ -9,27 +9,39 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:customSidebar.selectExplorerIcon"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-  "viewsContainers": {
-    "activitybar": [
+    "commands": [
       {
-        "id": "mySidebar",
-        "title": "My Tool",
-        "icon": "media/icon.svg"
+        "command": "customSidebar.selectExplorerIcon",
+        "title": "Select Custom Explorer Icon"
+      },
+      {
+        "command": "customSidebar.resetExplorerIcon",
+        "title": "Reset Explorer Icon to Default"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "mySidebar",
+          "title": "Custom Icon Tool",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "mySidebar": [
+        {
+          "id": "mySidebarView",
+          "name": "Explorer Icon Customizer"
+        }
+      ]
+    }
   },
-  "views": {
-    "mySidebar": [
-      {
-        "id": "mySidebarView",
-        "name": "Main View"
-      }
-    ]
-  }
-},
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
