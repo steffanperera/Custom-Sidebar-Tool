@@ -1,13 +1,27 @@
 {
-  "name": "custom-sidebar-tool",
-  "displayName": "custom-sidebar-tool",
-  "description": "custom sidebar tool",
-  "version": "0.0.1",
+  "name": "custom-explorer-icon-tool",
+  "displayName": "Custom Explorer Icon Tool",
+  "description": "Customize the VS Code Explorer icon with your own image files",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/custom-explorer-icon-tool"
+  },
   "engines": {
     "vscode": "^1.108.1"
   },
+  "publisher": "your-publisher-name",
   "categories": [
-    "Other"
+    "Themes"
+  ],
+  "keywords": [
+    "icon",
+    "explorer",
+    "customize",
+    "theme",
+    "sidebar"
   ],
   "main": "./out/extension.js",
   "contributes": {
